@@ -5,10 +5,15 @@
 
 <style type="text/css">
 
+	#website{
+		background-color: #c2c2c2;
+		background-image: url(img/bg.gif);
+		background-repeat: repeat;
+	}
 	#website a{
 		color: #F09126;
-	}
 
+	}
 	#header{
 		border-style: solid;
 		border-width: 1px;
@@ -49,15 +54,54 @@
 		border-bottom: solid 1px gray;
 		
 	}
-	#navigation a{
-		background-color: blue;
-		width: 12%;
-		color: white;
-		display:inline-block;
+	#navigation ul {
+		text-align: left;
+		display: inline;
+		margin: 0;
+		padding: 15px 4px 17px 0;
+		list-style: none;
+	}
+	#navigation ul li {
+		text-align: left;
+		font-size: 10px;
 		border-right: 1px solid white;
+		width: 7.55%;
+		display: inline-block;
+		background-color: blue;
+		margin-right: -4px;
+		position: relative;
+		padding: 15px 20px;
+		cursor: pointer;
+	}
+	#navigation ul li ul{
+		padding: 0;
+		position: absolute;
+		top:40;
+		display: inline-block;
+		left: 0;
+		width: 150px;
+		visibility: hidden;
+	}
+	#navigation ul li ul li { 
+  		background: blue; 
+		display: block; 
+		color: blue;
+		text-shadow: 0 -1px 0 #000;
+		width:100;
+	}
+	#navigation ul li ul li:hover { background: orange; }
+
+	#navigation ul li:hover ul {
+		display: block;
+		opacity: 1;
+		visibility: visible;
+	}
+	#navigation ul li a {
+		color: white;
 		text-decoration: none;
 	}
-	#navigation :hover{
+
+	#navigation ul li:hover{
 		background-color: orange;
 		color: black;
 	}
@@ -71,33 +115,56 @@
 	}
 	#divitor{
 		background-color: white;
-		border-bottom: double 3px gray;
+		border-bottom: solid 3px gray;
 	}
 	#announcment{
+		padding-left: 35px;
 		float: left;
-		border-bottom: solid 5px gray;
-		width: 62%;
+		width: 55%;
+	}
+	#announcment p{
+		border-bottom: solid 1px gray;
+		border-collapse: separate;
+
 	}
 	#socialLinks{
-
+		margin-top: 25px;
+		padding-left: 10px;
 		float: right;
 		border-style: solid;
 		border-width: 1px;
 		border-color: #F09126;
 		background-color: white;
-		border-bottom: solid 1px white;
 		width: 37%;
 	}
 	#events{
-		border-spacing: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top:10px;
 		float: right;
 		background-color: #F09126;
-		width: 37%;
+		width: 36%;
 	}
 	#events_img1{
 		background-color: yellow;
 	}
 	#main{
+		padding-right: 20px;
+		padding-left: 20px;
+		border-style: solid;
+		border-width: 1px;
+		border-top: none;
+		border-bottom: none;
+		background-color: white;
+		overflow: hidden;
+		margin-left: 285px;
+		margin-right: 285px;
+		margin-top: 0px;
+		font-family: georgia, helvetica, courier;
+		font-size: 1em;
+		font-style: normal;
+	}
+	#footer{
 		padding-right: 20px;
 		padding-left: 20px;
 		border-style: solid;
@@ -109,28 +176,28 @@
 		margin-right: 285px;
 		margin-top: 0px;
 		font-family: georgia, helvetica, courier;
-		font-size: 1em;
+		font-size: 0.75em;
 		font-style: normal;
 	}
-	/* List to arrow *//*
-	ul {
-	    margin: 0.75em 0;
-	    padding: 0 1em;
-	    list-style: none;
+	#address{
+		margin-top:10px;
+		background-color:gray;
+		float: left;
+		width:65%;
+		max-height:50px;
+	}
+	#companyLogo{
+		margin-top:10px;
+		background-color:gray;
+		min-height:50px;
+	}
+	#companyLinks{
+		float:right;
 	}
 
-	li:before { 
-    content: "";
-    border-color: transparent white;
-    border-style: solid;
-    border-width: 0.35em 0 0.35em 0.45em;
-    display: block;
-    height: 0;
-    width: 0;
-    left: -1em;
-    top: 0.9em;
-    position: relative;
-	}*/
+	
+
+
 
 </style>
 </head>
@@ -152,14 +219,88 @@
 				<img src="http://static3.echalk.net/www/bayside/site/layout/HS495_CONTEMPORARY_02.jpg">
 			</div>
 			<div id="navigation">
-				<a href="http://www.baysidehighschool.org/site_res_view_folder.aspx?id=42bf9055-816a-4a07-908f-9ea9b70851f7">Directory</a>
-				<a href="http://www.baysidehighschool.org/site_res_view_folder.aspx?id=5174edc2-d8de-4b22-b4ee-d2ca6cadac8c">About BHS</a>
-				<a href="http://www.baysidehighschool.org/calendar_month.aspx?id=30f22543-4e12-4655-acad-f46af3d77c6e">Calendar</a>
-				<a href="http://www.baysidehighschool.org/site_res_view_folder.aspx?id=dc2c77d3-5343-4699-bbf9-d2d1d2373188">Academics</a>
-				<a href="http://www.baysidehighschool.org/site_res_view_folder.aspx?id=4e0cb9af-d845-4299-ba4c-6f7c66b36a48">Students</a>
-				<a href="http://www.baysidehighschool.org/site_res_view_folder.aspx?id=c434d558-e9bf-424c-b439-34279ed55bed">Parents</a>
-				<a href="http://www.baysidehighschool.org/site_res_view_folder.aspx?id=9e58a4cf-6fa4-41c2-9784-62f283ef7c85" target="">Library</a>
-				<a href="http://www.baysidehighschool.org/site_res_view_folder.aspx?id=277d601c-da04-40ed-8485-ad4a2a5c3ab7">Guidance</a>
+				<ul>
+
+					<li><a href="">Directory</a>
+						<ul>
+							<li><a href="">FACULTY & STAFF</a></li>
+							<li><a href="">CLASS PAGES</a></li>
+							<li><a href="">GROUP PAGES</a></li>
+						</ul>
+					</li>
+					<li><a href="">About BHS</a>
+						<ul>
+							<li><a href="">BELL SCHEDULE</a></li>
+							<li><a href="">CALENDAR - FALL 2014</a></li>
+							<li><a href="">DISCIPLINE CODE</a></li>
+							<li><a href="">DRESS CODE</a></li>
+							<li><a href="">HISTORY IN PHOTOGRAPHS</a></li>
+							<li><a href="">ZERO TOLERANCE LETTER</a></li>
+						</ul>
+					</li>
+					<li><a href="">Calendar</a></li>
+					<li><a href="">Academics</a>
+						<ul>
+							<li><a href="">ART, MUSIC, AND LANGUAGES</a></li>
+							<li><a href="">BUSINESS EDUCATION/ TECHNOLOGY</a></li>
+							<li><a href="">ENGLISH / LANGUAGE ARTS</a></li>
+							<li><a href="">INSTRUCTIONAL SUPPORT SERVICES</a></li>
+							<li><a href="">MATHEMATICS</a></li>
+							<li><a href="">PHYSICEAL EDUCATION / HEALTH</a></li>
+							<li><a href="">SCIENCE</a></li>
+							<li><a href="">SOCIAL STUDIES</a></li>
+							<li><a href="">SPECIAL PROGRAMS</a></li>
+						</ul>
+					</li>
+					<li><a href="">Students</a>
+						<ul>
+							<li><a href="">BHS HUNIORS</a></li>
+							<li><a href="">BHS SENIORS</a></li>
+							<li><a href="">HOW TO USE ECHALK</a></li>
+							<li><a href="">KEY CLUBE</a></li>
+							<li><a href="">SPORTS TEAMS</a></li>
+							<li><a href="">STUDENT ORGANIZATION</a></li>
+							<li><a href="">TRANSCRIPT REQUEST FORM</a></li>
+						</ul>
+					</li>
+					<li><a href="">Parents</a>
+						<ul>
+							<li><a href="">PARENT RESOURCES</a></li>
+							<li><a href="">NYCODE 2013-2014 SCHOOL YEAR CALENDAR</a></li>
+							<li><a href="">PARENT REGISTRATION</a></li>
+							<li><a href="">PTA</a></li>
+							<li><a href="">PTA EXECUTIVE BOARD 2013-14</a></li>
+							<li><a href="">SLT MEMBERS 2013-14</a></li>
+						</ul>
+					</li>
+					<li><a href="" target="">Library</a>
+						<ul>
+							<li><a href="">ABOUT THE LIBRARY</a></li>
+							<li><a href="">BOOKS AT BHS - ONLINE BOOK CATALOG</a></li>
+							<li><a href="">DATABASES</a></li>
+							<li><a href="">EBOOKS</a></li>
+							<li><a href="">NOODLE TOOLS - CREATE A WORKS CITED PAGE</a></li>
+							<li><a href="">COLLEGE & CAREER</a></li>
+							<li><a href="">HOMEWORK HELP</a></li>
+							<li><a href="">MLA STYLE GUIDE HANDBOOK</a></li>
+							<li><a href="">QUEENS LIBRARY</a></li>
+							<li><a href="">WEBSITE EVALUATION WORKSHEET</a></li>
+						</ul>	
+					</li>
+					<li><a href="">Guidance</a>
+						<ul>
+							<li><a href="">ANNOUNCEMENTS</a></li>
+							<li><a href="">COLLEGE / COLLEGE NOW</a></li>
+							<li><a href="">PSAT / SAT</a></li>
+							<li><a href="">SCHOLARSHIPS / FINANCIAL AID</a></li>
+							<li><a href="">INTERNSHIPS / WORKSHOPS</a></li>
+							<li><a href="">FRESHMEN</a></li>
+							<li><a href="">SOPHOMORES</a></li>
+							<li><a href="">JUNIORS</a></li>
+							<li><a href="">SENIORS</a></li>
+							<li><a href="">FAQS</a></li>
+						</ul>
+					</li>
 			</div>
 
 			<div id="login">
@@ -180,8 +321,14 @@
 		<div id="main">
 			<div id="announcment">
 				<h3>Daily Announcements</h3>
-				<p>eChalk Update - All student accounts have been created and all classes have been uploaded. Students: your user name is your firstname.lastname and your password is your 9 digit OSIS#. If you have any questions, please email <a href="smiller@baysidehighschool.org">smiller@baysidehighschool.org</a> </p>
-				<p>Pupil Path Update - Incoming students will receive a letter containing their pupil path user names and passwords during their guidance counselor appointment. Parent information (user names and passwords) are also on this letter.</p>
+				<p>eChalk Update - All student accounts have been created and all classes have been uploaded. Students: your user name is your firstname.lastname and your password is your 9 digit OSIS#. If you have any questions, please email <a href="smiller@baysidehighschool.org">smiller@baysidehighschool.org</a>
+				<br>
+				<br>
+				Pupil Path Update - Incoming students will receive a letter containing their pupil path user names and passwords during their guidance counselor appointment. Parent information (user names and passwords) are also on this letter.
+				</p>
+
+				<p>The 1st meeting for our school newspaper (The Baysider) will be on September 23rd, during period 11, in room B6. We are looking for writers, photographers, and artists. All are welcome!
+				</p>
 			</div>
 			
 			<div id="socialLinks">
@@ -222,9 +369,25 @@
 		<!--Footer:Address,Company Logo,Company Links,Select Language-->
 
 		<div id="footer">
-			<div id="address"></div>
-			<div id="companyLogo"></div>
-			<div id="companyLinks"></div>
+			<div id="address">
+				<p>Bayside High School, 3224 Corporal Kennedy Street, Bayside, NY 11361-1061<br>
+					Phone: (718) 229-7600  |  Fax: (718) 423-9566
+					<br>
+					<a href= ""><u>Locate School</u></a> 
+				</p>
+				
+			</div>
+
+			<div id="companyLogo">
+				<a href=""><u>Contact Us</u></a>
+				<a href=""><u>User Policy</u></a>
+				<img src="http://static3.echalk.net/images/facebook_share_icon.gif">
+				<img src="http://static3.echalk.net/images/twitter_share_icon.gif">
+			</div>
+			<div id="companyLinks">
+				<img src="http://www.baysidehighschool.org/themes/contemporary/images/echalkPower.gif">
+			</div>
+				
 			<div id="selectLanguage"></div>
 			
 		</div>
