@@ -5,118 +5,117 @@
 
 <style type="text/css">
 
-	#website{
+	body{
 		background-color: #c2c2c2;
+		margin-top: 50px;
+		margin-bottom: 50px;
 		background-image: url(img/bg.gif);
 		background-repeat: repeat;
+		font-family: arial, sans-serif;
 	}
-	#website a{
-		color: #F09126;
 
+	a{ color: #FF9900;}
+
+	#website{
+		background-color: #FFF;
+		width: 940px;
+		margin: 0 auto;
+		padding: 3px;
 	}
-	#header{
-		border-style: solid;
-		border-width: 1px;
-		border-bottom: none;
-		margin-left: 285px;
-		margin-right: 285px;
-		margin-top: 25px;
-		font-family: georgia, helvetica, courier;
-		font-size: 1em;
-		font-style: normal;
-		background-color: white;
-		padding-right: 5px;
-		padding-left: 5px;
-	}
+
 	#quickLinks{
-		padding-top: 5px;
-		background-color: orange;
+		padding: 5px 5px 0px 5px; 
+		background-color: #FF9632; 
 		border-bottom: dashed 1px white;
-		font-size: 12px;
-		font-weight: lighter;
-		max-height: 25px;
+		height: 25px;
 	}
-	#quickLinks li{
-		display: inline;
+	#quickLinks ul{
+		margin: 0;
+		padding-bottom: 15px;
+		padding-right: 4px;
+		padding-left: 17px;
+		padding-top: 0px;
 	}
-	#quickLinks li a{
-		text-decoration: none;
-		color: black;
-	}
-	#logo{
+	#quickLinks ul li{ display: inline;}
+	#quickLinks li a{ text-decoration: none; color: black; font-size: 11px;}
 
-	}
-	#logo img{
-		width: 100%;
-	}
-	#navigation{
-		padding-top: 5px;
-		border-bottom: solid 1px gray;
-		
+	#logo img{ width: 100%;}
+
+	#navigation{ 
+		border-bottom: solid 1px gray; 
+		margin: 5px 0 -5px 0px; 
+		text-align: center;
 	}
 	#navigation ul {
-		text-align: left;
 		display: inline;
 		margin: 0;
 		padding: 15px 4px 17px 0;
 		list-style: none;
 	}
 	#navigation ul li {
-		text-align: left;
 		font-size: 10px;
 		border-right: 1px solid white;
-		width: 7.55%;
+		width: 8.08%;
 		display: inline-block;
-		background-color: blue;
+		background-color: #003264;
 		margin-right: -4px;
 		position: relative;
-		padding: 15px 20px;
+		padding: 11px 20px;
 		cursor: pointer;
 	}
-	#navigation ul li ul{
-		padding: 0;
-		position: absolute;
-		top:40;
-		display: inline-block;
-		left: 0;
-		width: 150px;
-		visibility: hidden;
-	}
-	#navigation ul li ul li { 
-  		background: blue; 
-		display: block; 
-		color: blue;
-		text-shadow: 0 -1px 0 #000;
-		width:100;
-	}
-	#navigation ul li ul li:hover { background: orange; }
-
+	#navigation ul li:hover{ background-color: orange; color: black;}
 	#navigation ul li:hover ul {
 		display: block;
-		opacity: 1;
 		visibility: visible;
 	}
-	#navigation ul li a {
+	#navigation ul li a{ color: #FFF; text-decoration: none; font-size: 12px;}
+	#navigation ul li a { color: white; text-decoration: none;}
+	#navigation ul li ul {
+		padding: 0;
+		position: absolute;
+		top: 35px;
+		left: 0;
+		width: auto;
+		display: none;
+		text-align: left;
+	}
+	#navigation ul li ul li { 
+  		padding: 7px 5px 7px 5px;
+		white-space: nowrap;
+		width: auto;
+		display: block; 
+		background: #003264; 
 		color: white;
-		text-decoration: none;
+	}
+	#navigation ul li ul li:hover { background: orange;}
+	
+	#divitor1{
+		background-color: white;
+		border-bottom: solid 1px gray;
 	}
 
-	#navigation ul li:hover{
-		background-color: orange;
-		color: black;
-	}
 	#login{
+		font-size: 12px;
+		background-color: white;
+		max-height: 6px;
 		padding-top: 15px;
 		padding-bottom: 10px;
 		padding-right: 10px;
 		padding-left: 10px;
-		background-color: white;
-		max-height: 10px;
 	}
-	#divitor{
+	
+	#divitor2{
 		background-color: white;
-		border-bottom: solid 3px gray;
+		border-bottom: solid 1px gray;
 	}
+
+	/*main*/
+	#main{
+		clear:both;
+		overflow: auto;
+		margin-right: 35px;
+	}
+
 	#announcment{
 		padding-left: 35px;
 		float: left;
@@ -133,67 +132,52 @@
 		float: right;
 		border-style: solid;
 		border-width: 1px;
-		border-color: #F09126;
+		border-color: #FFB973;
 		background-color: white;
 		width: 37%;
+	}
+	#titleOfEvents {
+			margin-top:10px;
+			float: right;
+			padding-right: 77px;
+			background-color: orange;
+			width: 30%;
 	}
 	#events{
 		padding-left: 10px;
 		padding-right: 10px;
-		margin-top:10px;
 		float: right;
-		background-color: #F09126;
+		background-color: #FFF1B8;
+
 		width: 36%;
 	}
+	#links { 
+		float: right;
+		width: 36%;
+		height: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: #FFF1B8;
+	}
 	#events_img1{
-		background-color: yellow;
-	}
-	#main{
-		padding-right: 20px;
-		padding-left: 20px;
-		border-style: solid;
+		padding: 10px 0px 0px 10px;
+		border: solid;
 		border-width: 1px;
-		border-top: none;
-		border-bottom: none;
-		background-color: white;
-		overflow: hidden;
-		margin-left: 285px;
-		margin-right: 285px;
-		margin-top: 0px;
-		font-family: georgia, helvetica, courier;
-		font-size: 1em;
-		font-style: normal;
+		border-color: gray;
+		background-color: #FFEEBC;
 	}
-	#footer{
-		padding-right: 20px;
-		padding-left: 20px;
-		border-style: solid;
-		border-width: 1px;
-		border-top: none;
-		background-color: white;
-		overflow: hidden;
-		margin-left: 285px;
-		margin-right: 285px;
-		margin-top: 0px;
-		font-family: georgia, helvetica, courier;
-		font-size: 0.75em;
-		font-style: normal;
-	}
-	#address{
-		margin-top:10px;
-		background-color:gray;
-		float: left;
-		width:65%;
-		max-height:50px;
-	}
-	#companyLogo{
-		margin-top:10px;
-		background-color:gray;
-		min-height:50px;
-	}
-	#companyLinks{
-		float:right;
-	}
+	
+	#footer-whole{ 
+		margin-top: 5px; 
+		width: 940px; 
+		font-size: 13px; 
+		clear:both;
+		overflow: auto;
+	}	
+	#footer{ }
+	#address{ background-color:#eee;height: 50px;width:50%; padding-left:none; padding: 10px; float:left;}
+	#companyLogo{ background-color:#eee;height: 70px;width:47%; float:right;}
+	#companyLinks{ float:right;}
 
 	
 
@@ -302,6 +286,9 @@
 						</ul>
 					</li>
 			</div>
+			<div id="divitor1">
+				<p></p>
+			</div>
 
 			<div id="login">
 				<form >
@@ -312,7 +299,7 @@
 				<a href="http://www.baysidehighschool.org/forgotpassword">Forgot Password?</a>
 				</form>
 			</div>
-			<div id= "divitor">
+			<div id= "divitor2">
 				<p></p>
 			</div>
 		</div>
@@ -321,14 +308,34 @@
 		<div id="main">
 			<div id="announcment">
 				<h3>Daily Announcements</h3>
-				<p>eChalk Update - All student accounts have been created and all classes have been uploaded. Students: your user name is your firstname.lastname and your password is your 9 digit OSIS#. If you have any questions, please email <a href="smiller@baysidehighschool.org">smiller@baysidehighschool.org</a>
+				<p> eChalk Update - All student accounts have been created and all classes have been 		uploaded. Students: your user name is your firstname.lastname and your password is 		your 9 digit OSIS#. If you have any questions, please email <a href="					smiller@baysidehighschool.org">smiller@baysidehighschool.org</a>
 				<br>
 				<br>
-				Pupil Path Update - Incoming students will receive a letter containing their pupil path user names and passwords during their guidance counselor appointment. Parent information (user names and passwords) are also on this letter.
+					Pupil Path Update - Incoming students will receive a letter containing their pupil path user names and passwords during their guidance counselor appointment. Parent information (user names and passwords) are also on this letter.
 				</p>
 
-				<p>The 1st meeting for our school newspaper (The Baysider) will be on September 23rd, during period 11, in room B6. We are looking for writers, photographers, and artists. All are welcome!
+				<p>
+					The 1st meeting for our school newspaper (The Baysider) will be on September 23rd, during period 11, in room B6. We are looking for writers, photographers, and artists. All are welcome!
 				</p>
+
+				<p>
+					WELCOME BACK!  FALL 2014 INFORMATION<br>
+					Please visit www.pupilpath.com for Summer Course & Regents grades, listed under 2013-2014, Term 7.<br>
+					Please download a copy of our new bell schedule for the 2014-15 school year!
+				</p>
+
+				<p>
+					The Princeton Review is at Bayside High School.
+ 				<br>
+					The Princeton Review is pleased to announce that Bayside High School continues to be a Princeton Review Partner in Education. For the spring of 2014, we are offering discounted SAT and ACT Test preparation programs at Bayside High School with substantial discounts for Bayside students. Bayside students are also eligible for discounts on Princeton Review programs at other locations throughout New York City. We also offer Private Tutoring. 
+				</p>
+
+				<p>
+					Dear Parents and Guardians:<br>
+					Nothing matters to us more than the safety of your child.
+					Bayside High School is instituting a new policy for all students to keep our learning environment safe and secure for all students and staff.  It is now required that students swipe-out at the end of their day by the Auditorium Lobby Exit which leads to 32nd Avenue or the Main Entrance which leads to Corporal Kennedy Street.<br> 
+					Students swipe –in early in the morning and the time is recorded by computer. Upon exiting the building students will once again swipe-out and the computer will record their departure time.
+					<a href="">Read more...</a>
 			</div>
 			
 			<div id="socialLinks">
@@ -344,54 +351,60 @@
 				<br>
 				<a href=""><u>Pupil Path</u></a>&nbsp;<a href=""><u>(pupilpath.com)</u></a>
 				<ul>
-					<li>In <a href=""><u>Korean</u></a>
-					<li>In <a href=""><u>Chinese</u></a>
-					<li>In <a href=""><u>Spanish</u></a>
+					<li>In <a href=""><u>Korean</u></a></li>
+					<li>In <a href=""><u>Chinese</u></a></li>
+					<li>In <a href=""><u>Spanish</u></a></li>
 				</ul>
 				</p>
 
 			</div>
 
+			<div id="titleOfEvents"><small>Upcoming Events <img src="http://static3.echalk.net/images/rss_button.gif"></small></div>
+
 			<div id="events">
+				<p>>>Thu, Sep 25 - Fri, Sep 26</p>
 				<div id="events_img1">
-					<h5>Upcoming Events</h5>
-					<p>>>Thu, Sep 25 - Fri, Sep 26</p>
 					<img src="http://static3.echalk.net/images/www/echalk/clipart/Religion/rosh_hashanah.png" alt="rosh_hashanah" width="25%">
 					<p>Rosh Hashanah <br>SCHOOL IS CLOSED </p>
 				</div>
 			</div>
 				
-			<div id="links"></div>
+			<div id="links">
+				<a href=""><b>Bayside High School Dress Code</b></a>
+				<hr>
+				<small>Please sign up to be placed on the <b>Parent Coordinator&#39;s email distribution list.</b> The form can be found <a href="">here</a>.</small>
+				<hr>
+				<a href="" style="color:#000; font-size:19px;"><b>MOUSE Squad Tech Support Request</b></a>
+			</div>
 			<div id="baysidePublication"></div>
 			<div id="weather"></div>
 		</div>
 
 		<!--Footer:Address,Company Logo,Company Links,Select Language-->
 
-		<div id="footer">
-			<div id="address">
-				<p>Bayside High School, 3224 Corporal Kennedy Street, Bayside, NY 11361-1061<br>
-					Phone: (718) 229-7600  |  Fax: (718) 423-9566
+		<div id="footer-whole">
+			<div id="footer">
+				<div id="address">
+					<p>Bayside High School, 3224 Corporal Kennedy Street, Bayside, NY 11361-1061<br>
+						Phone: (718) 229-7600  |  Fax: (718) 423-9566
+						<br>
+						<a href= ""><u>Locate School</u></a> 
+					</p>
+				</div>
+				<div id="companyLogo">
+					<a href=""><u>Contact Us</u></a> |
+					<a href=""><u>User Policy</u></a>
+					<img src="http://static3.echalk.net/images/facebook_share_icon.gif">
+					<img src="http://static3.echalk.net/images/twitter_share_icon.gif">
 					<br>
-					<a href= ""><u>Locate School</u></a> 
-				</p>
-				
+				</div>
+				<div id="companyLinks">
+					<img src="http://www.baysidehighschool.org/themes/contemporary/images/echalkPower.gif">
+				</div>
 			</div>
-
-			<div id="companyLogo">
-				<a href=""><u>Contact Us</u></a>
-				<a href=""><u>User Policy</u></a>
-				<img src="http://static3.echalk.net/images/facebook_share_icon.gif">
-				<img src="http://static3.echalk.net/images/twitter_share_icon.gif">
-			</div>
-			<div id="companyLinks">
-				<img src="http://www.baysidehighschool.org/themes/contemporary/images/echalkPower.gif">
-			</div>
-				
 			<div id="selectLanguage"></div>
 			
 		</div>
-
 	</div>
 
 </body>
