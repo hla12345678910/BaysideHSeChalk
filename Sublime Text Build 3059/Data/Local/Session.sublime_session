@@ -251,6 +251,50 @@
 				"selected_items":
 				[
 					[
+						"marg",
+						"margin-top"
+					],
+					[
+						"margin",
+						"margin-right"
+					],
+					[
+						"border",
+						"border-width"
+					],
+					[
+						"bo",
+						"border"
+					],
+					[
+						"fonts",
+						"font-size"
+					],
+					[
+						"list",
+						"list-style"
+					],
+					[
+						"fon",
+						"font-size"
+					],
+					[
+						"pa",
+						"padding-top"
+					],
+					[
+						"pd",
+						"padding-left"
+					],
+					[
+						"pad",
+						"padding-right"
+					],
+					[
+						"padding",
+						"padding-bottom"
+					],
+					[
 						"inlin",
 						"inline"
 					],
@@ -263,16 +307,8 @@
 						"display"
 					],
 					[
-						"border",
-						"border-bottom"
-					],
-					[
 						"mar",
 						"margin-top"
-					],
-					[
-						"list",
-						"list-style-type"
 					],
 					[
 						"te",
@@ -331,11 +367,22 @@
 			"buffers":
 			[
 				{
-					"file": "/C/Intel/container.html",
+					"file": "/C/Users/Mu.C/Documents/GitHub/BaysideHSeChalk/container.html",
 					"settings":
 					{
-						"buffer_size": 4434,
-						"line_ending": "Windows"
+						"buffer_size": 12422,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "<html>\n<head>\n	<title>Fake BHS - Homepage</title>\n	<style type=\"text/css\">\n		body{\n			background-color: #c2c2c2;\n			margin-top: 50px;\n			margin-bottom: 50px;\n			background-image: url(img/bg.gif);\n			background-repeat: repeat;\n			font-family:\"Arial\", Gadget, sans-serif;\n		}\n		a { color: #FF9900}\n\n		.container{\n			background-color: #FFF;\n			width: 940px;\n			margin: 0 auto;\n			padding: 3px;\n			box-shadow: 0px 0px 10px 3px rgba(119, 119, 119, 0.5);\n		}\n		\n		#quickLinks { padding: 5px 5px 0px 5px; background-color: #FF9632; height: 25px;}\n		#quickLinks ul{ margin: 0; padding: 0 0 5px 5px;}\n		#quickLinks ul li{ display: inline;}\n		#quickLinks ul li a { text-decoration: none; color: #000; font-size: 11px;}\n		#quickLinks hr { margin: 0 -5px 0 -5px; background-color: #FF8000; border: 1px dotted #FFF;}\n		\n		#logo img{ width: 100%;}\n\n		#navigation { margin: 5px 0 -5px 0px; text-align: center; }\n		#navigation ul {\n			display: inline;\n			width:940px;\n			margin: 0;\n			padding: 15px 4px 17px 0;\n			list-style: none;\n		}\n		#navigation ul li {\n			width:76px;\n			display: inline-block;\n			margin-right: -3px;\n			position: relative;padding: 11px 20px;\n			background-image: linear-gradient(#557896, #28507D 45%, #003264);\n			cursor: pointer;\n		}\n		#navigation ul li a{ color: #FFF; text-decoration: none; font-size: 12px;}\n		#navigation ul li:hover { background-image: linear-gradient(#FFB973, #FFA046 45%, #FF9B32);}\n		#navigation ul li:hover ul { display: block; visibility: visible;}\n		#navigation ul li ul {\n			padding: 0;\n			position: absolute;\n			top: 35px;\n			left: 0;\n			width: auto;\n			display: none;\n			text-align: left;\n		}\n		#navigation ul li ul li { \n			padding: 7px 5px 7px 5px;\n			white-space: nowrap;\n			width: auto;\n			display: block; \n			background: #003264; \n			color: #fff;\n		}\n		#navigation ul li ul li{ font-size: 10pt; padding-left: 5px;}\n		#navigation ul li ul li:hover a { color:#000;}\n		\n\n		#login { \n			margin-top: -8px;\n			background-image: url(img/bgLogin.gif);\n			background-repeat: repeat;\n			width:100%;\n			height:50px;\n			font-size: 12px;\n		}\n		#sep{ height: 25px; background-image: linear-gradient(#D3D3D3, #F6F6F6 50%, #FFF);}\n\n		#main{\n			clear: both; /* No floating elements allowed on either the left or the right side */\n			overflow: auto; /* Fixed div floating outside the main*/\n		}\n		#announcements { \n			float: left;\n			margin: 0 -10px 0 -5px;\n			width: 65%;\n		}\n		#announcementItem{\n			margin: 0 30px 0 50px;\n			font-size: 15px;\n			word-wrap: break-word;\n		}\n\n		#socialLinks { \n			float: right;\n			padding-left: 7px;\n			margin-right: 30px;\n			width: 30%;\n			border: 1px solid #FFB973;\n			box-shadow: 1.5px 1.5px 1px -0.5px rgba(0, 0, 0, 0.5);\n		}\n\n		#titleBar {\n			float: right;\n			margin: 15px 30px 0 0;\n			padding: 5px 0 5px 10px;\n			background-image: linear-gradient(#FFB973, #FFA046 45%, #FF9B32);\n			width: 30%;\n		}\n		#events { \n			float: right;\n			width: 30%;\n			padding: 10px 5px 10px 5px;\n			margin-right: 30px;\n			background-color: #FFF1B8;\n			box-shadow: 1.5px 1.5px 1px -0.5px rgba(0, 0, 0, 0.5);\n		}\n\n		#links { \n			float: right;\n			width: 30%;\n			height: auto;\n			padding: 10px 5px 10px 5px;\n			margin-right: 30px;\n			background-color: #FFF1B8;\n			box-shadow: 1.5px 1.5px 1px -0.5px rgba(0, 0, 0, 0.5);\n		}\n		#baysidepub { \n			float: right;\n			margin: 15px 30px 0 0;\n			padding: 10px 3px 10px 4px;\n			width: 30%;\n			height: 250px;\n			border: 1px solid #FFB973;\n			box-shadow: 1.5px 1.5px 1px -0.5px rgba(0, 0, 0, 0.5);\n		}\n\n		#weather { \n			float: right;\n			width: 30%;\n			padding: 10px 0 10px 10px;\n			margin-right: 30px;\n			font-size: 12px;\n			background-color: #FFF1B8;\n			box-shadow: 1.5px 1.5px 1px -0.5px rgba(0, 0, 0, 0.5);\n		}\n		#weather img{ padding:5px 10px 15px 5px;}\n\n		#footer{ margin-top: 5px; width:auto; font-size: 13px;}\n		#footerInfo{ background-color:#eee; height: 70px;}\n		#footerAddress { padding: 10px;}\n		#footerLinks { float:right; margin: -25px 0 0 0;}\n		#footerLogo { background:url(img/echalkPower.gif) no-repeat bottom right #fff; padding-bottom: 60px;}\n\n		span.qLBullet { \n			display: inline-block;\n			background-image: url(http://static1.echalk.net/themes/global/images/icBullets.gif);\n			background-position: 0px -88px;\n			background-repeat: no-repeat;\n			width: 7px;\n			height: 10px;\n		}\n		span.headerBullet1 {\n			background-image: url(http://static1.echalk.net/themes/contemporary/images/icBullets24.png);\n			background-repeat: no-repeat;\n			display: block;\n			float: left;\n			width: 25px;\n			height: 24px;\n			position: relative;\n			z-index: 5;\n			background-color: rgb(255,153,52);\n			color: rgb(51,51,51);\n		}\n		span.headerBullet2 {\n			display: block;\n			float: left;\n			width: 16px;\n			height: 16px;\n			position: relative;\n			right: 2px;\n			top: 1px;\n			margin-right: 2px;\n			background-image: url(http://static1.echalk.net/themes/contemporary/images/icBullets16.png);\n			background-position: 0px -160px;\n			background-repeat: no-repeat;\n		}\n	</style>\n</head>\n<body>\n	<div class=\"container\">\n		<div id=\"header\">\n			<div id=\"quickLinks\">\n				<ul>\n					<li><span class=\"qLBullet\"></span><a href=\"\">School Home</a></li>\n					<li><span class=\"qLBullet\"></span><a href=\"\">Login</a></li>\n					<li><span class=\"qLBullet\"></span><a href=\"\">Help</a></li>\n					<li><span class=\"qLBullet\"></span><a href=\"\">Search</a></li>\n				</ul>\n				<hr>\n			</div>\n			<div id=\"logo\"><img src=\"img/logo.jpg\"></div>\n			<div id=\"navigation\">\n				<ul>\n					<li><a>DIRECTORY</a>\n						<ul>\n							<li><a>Faculty &amp; Staff</a></li>\n							<li><a>Class Pages</a></li>\n							<li><a>Group Pages</a></li>\n						</ul>\n					</li>\n					<li><a>ABOUT BHS</a>\n						<ul>\n							<li><a>Bell Schedule</a></li>\n							<li><a>Calendar - Fall 2014</a></li>\n							<li><a>Discipline code</a></li>\n							<li><a>Dress Code</a></li>\n							<li><a>History in photographs</a></li>\n							<li><a>Zero tolerance letter</a></li>\n						</ul>\n					</li>\n					<li><a>CALENDAR</a></li>\n					<li><a>ACADEMICS</a>\n						<ul>\n							<li><a>Art, Music, and Languages</a></li>\n							<li><a>Business Education / Technology</a></li>\n							<li><a>English / Language Arts</a></li>\n							<li><a>Instructional Support Services</a></li>\n							<li><a>Mathematics</a></li>\n							<li><a>Physical Education / Health</a></li>\n							<li><a>Science</a></li>\n							<li><a>Social Studies</a></li>\n							<li><a>Special Programs</a></li>\n						</ul>\n					</li>\n					<li><a>STUDENTS</a>\n						<ul>\n							<li><a>BHS Juniors</a></li>\n							<li><a>BHS Seniors</a></li>\n							<li><a>How to use eChalk</a></li>\n							<li><a>Key Club</a></li>\n							<li><a>Sports Teams</a></li>\n							<li><a>Student Organization</a></li>\n							<li><a>Transcript Request Form</a></li>\n						</ul>\n					</li>\n					<li><a>PARENTS</a>\n						<ul>\n							<li><a>Parent Resources</a></li>\n							<li><a>NYCDOE 2013-2014 School Year Calendar</a></li>\n							<li><a>Parent Registration</a></li>\n							<li><a>PTA</a></li>\n							<li><a>PTA Executive Board 2013-14</a></li>\n							<li><a>SLT Members 2013-14</a></li>\n						</ul>\n					</li>\n					<li><a>LIBRARY</a>\n						<ul>\n							<li><a>About the Library</a></li>\n							<li><a>Books at BHS - Online Book Catalog</a></li>\n							<li><a>Databases</a></li>\n							<li><a>eBooks</a></li>\n							<li><a>Noodle Tools -  Create a Works Cited Page</a></li>\n							<li><a>College &amp; Career</a></li>\n							<li><a>Homework Help</a></li>\n							<li><a>MLA Style Guide Handbook</a></li>\n							<li><a>Queens Library</a></li>\n							<li><a>Website Evaluation Worksheet</a></li>\n						</ul>\n					</li>\n					<li><a>GUIDANCE</a>\n						<ul>\n							<li><a>Announcements</a></li>\n							<li><a>College / College Now</a></li>\n							<li><a>PSAT / SAT</a></li>\n							<li><a>Scholarships / Financial Aid</a></li>\n							<li><a>Internships / Workshops</a></li>\n							<li><a>Freshmen</a></li>\n							<li><a>Sophomores</a></li>\n							<li><a>Juniors</a></li>\n							<li><a>Seniors</a></li>\n							<li><a>FAQs</a></li>\n						</ul>\n					</li>\n				</ul>\n			</div>\n			<hr>\n			<div id=\"login\">\n				<span style=\"float:left; padding:15px 20px 0 10px;\"><b>LOGIN</b></span>\n				<div style=\"padding-top: 10px;\">\n					Username: <input type=\"text\" name=\"fname\">\n					Password: <input type=\"text\" name=\"lname\">\n					<input type=\"submit\" value=\"LOGIN\">\n					<span style=\"float:right; padding:5px 15px 0 0;\"><a href=\"#\">Forgot Password?</a>\n					Need Help?\n					<a href=\"#\">English</a> | <a href=\"#\">Espa&ntilde;ol</a></span>\n				</div>\n			</div>\n		</div>\n		<div id=\"sep\"></div>\n		<div id=\"main\">\n			<div id=\"announcements\">\n				<h3 style=\"padding-left:30px;\"><span class=\"headerBullet1\"></span>Daily Announcements <img src=\"http://static3.echalk.net/images/rss_button.gif\"></h2>\n				<div id=\"announcementItem\">\n					<img src=\"http://static3.echalk.net/images/ico_urgent_triangle.gif\" align=\"left\"> <b>eChalk Update</b> - All student accounts have been created and all classes have been uploaded. Students: your user name is your firstname.lastname and your password is your 9 digit OSIS#. If you have any questions, please email smiller@baysidehighschool.org\n					<hr>\n				</div>\n				\n				<div id=\"announcementItem\">\n					<b>Pupil Path Update</b> - Incoming students will receive a letter containing their pupil path user names and passwords during their guidance counselor appointment. Parent information (user names and passwords) are also on this letter.\n					<hr>\n				</div>\n				<div id=\"announcementItem\">\n					<b style=\"font-size:22px;\">PROSPECTIVE STUDENTS</b><br>\n					<b style=\"font-size:12px;\">There will be 2 open house dates in the fall for the 2015-2016 school year:</b><br>\n					<br>\n					<b style=\"font-size:16px; color: #CC0039\">Tuesday, October 21, 2014</b><br>\n					<b style=\"font-size:12px;\">Auditorium doors will open at 6:30 pm and Information Session will begin promptly at 7 pm</b><br>\n					<b style=\"font-size:16px; color: #CC0039\">Thursday, November 6, 2014</b><br>\n					<b style=\"font-size:12px;\">Auditorium doors will open at 6:30 pm and Information Session will begin promptly at 7 pm</b><br>\n					<br>\n					<b style=\"font-size:18px;\">Specialized programs:</b><br>\n					<p style=\"font-size:14px;\">\n						<b>Q12A</b> - <a href=\"\">Digital Art &amp; Design</a><br>\n						<b>Q12B</b> - <a href=\"\">Music: Performance &amp; Production</a><br>\n						<b>Q12C</b> - <a href=\"\">Environmental Engineering &amp; Technology</a><br>\n						<b>Q12D</b> - <a href=\"\">Humanities &amp; Non-Profit Management</a><br>\n						<b>Q12E</b> - <a href=\"\">Computer Programming &amp; Web Design</a><br>\n						<b>Q12G</b> - <a href=\"\">Sports Medicine &amp; Management</a>\n					</p>\n					<b style=\"font-size:16px;\"><a href=\"\">FAQs for Students applying for 2015-2016 school year</a></b><br>\n					<br>\n					<b style=\"font-size:15px;\">Audition Information 2014-2015<br>\n					Attention current 7th Graders:</b><br>\n					As you begin your high school search process, here are some important dates to remember for the Bayside High School Digital Art &amp; Music: Performance &amp; Production Auditions - <br>\n					<ul style=\"font-size:14px;\">\n					<li>Sunday, November 2, 2014 - 9:30 AM</li>\n					<li>Saturday, November 15, 2014 - 2:00 PM</li>\n					<li>Sunday, November 16, 2014 - 9:30 AM</li>\n					<li>Saturday, January 10, 2015 - 9:30 AM</li>\n					</ul>\n					Plan on arriving 1/2 hour before the scheduled audition time.<br> \n					You do not need a ticket or an appointment. \n					<hr>\n				</div>\n				<div id=\"announcementItem\">\n					<b><a href=\"#\">Bayside High School School Store</a></b><br>\n					<small>Get your <b>Bayside HS</b> gear:<br>\n					shirts, hoodies, water bottles, mugs, and more!</small><br>\n					<img src=\"http://static3.echalk.net/www/ud00/5/5b7cf86c9cae4dfb955648db6855bb3d/Personal_Images/shop.PNG\" width=\"200px\" style=\"padding:5px;\">\n				</div>\n			</div>\n\n			<div id=\"socialLinks\">\n				<p><img src=\"img/facebook_twitter_logo.jpg\" width=\"50px\" align=\"left\">\n				LIKE us on <a href=\"#\">Facebook</a><br>\n				FOLLOW us on <a href=\"#\">Twitter</a>\n				</p>\n				<p>\n				<b>Instructions for logging into:</b><br>\n				<b><a href=\"#\">E-Chalk (log in above)</a></b><br>\n				<b><a href=\"#\">Pupil Path (pupilpath.com)</a></b><br>\n				* In <a href=\"#\">Korean</a><br>\n				* In <a href=\"#\">Chinese</a><br>\n				* In <a href=\"#\">Spanish</a>\n				</p>\n			</div>\n\n			<div id=\"titleBar\"><span class=\"headerBullet2\"></span><small>Upcoming Events <img src=\"http://static3.echalk.net/images/rss_button.gif\"></small></div>\n			<div id=\"events\">\n				<div style=\"font-size:12px; text-align: center;\">Wednesday, October 01, 2014<br>\n				<a href=\"\" style=\"color: #000;\">View Monthly Calendar</a></div>\n			</div>\n\n			<div id=\"titleBar\"><span class=\"headerBullet2\"></span><small>Quick Links <img src=\"http://static3.echalk.net/images/rss_button.gif\"></small></div>\n			<div id=\"links\">\n				<a href=\"\"><b>Bayside High School Dress Code</b></a>\n				<hr>\n				<small>Please sign up to be placed on the <b>Parent Coordinator&#39;s email distribution list.</b> The form can be found <a href=\"\">here</a>.</small>\n				<hr>\n				<a href=\"\" style=\"color:#000; font-size:19px;\"><b>MOUSE Squad Tech Support Request</b></a>\n			</div>\n\n			\n			<div id=\"baysidepub\">\n				<b>Bayside Publications</b> <img src=\"http://static3.echalk.net/images/rss_button.gif\">\n				<hr style=\"margin: 0 0 0 -5px; background-color: #FFF; border: 1px dotted #000;\"><br>\n				<small>Check out The Baysider: Community Edition - our newest publication!</small>\n				<img src=\"http://static3.echalk.net/www/ud00/5/5b7cf86c9cae4dfb955648db6855bb3d/Personal_Images/baysider.gif\" width=\"100%\">\n				<hr>\n				<img src=\"http://static3.echalk.net/www/bayside/images/Front-Back-Cover-2014-1.gif\" height=\"100px\" align=\"left\">\n				<b><a href=\"\">Soundings 2014</a></b><br>\n				<small>BHS Literary Magazine - If you would like to purchase a copy, please see Ms. Ormaechea in room 131.</small>\n			</div>\n\n			<div id=\"titleBar\"><span class=\"headerBullet2\"></span><small>Weather</small></div>\n			<div id=\"weather\">\n				<img src=\"img/weather/rain.gif\" align=\"left\">\n				Today, 10/1/2014 <br> <b style=\"color: #CC0039\">High: 70</b> <b style=\"color: #0066F3\">Low: 57</b> <br> Rain showers <br> 38% chance of precipitation. <br>\n				<br>\n				<img src=\"img/weather/partly-cloudy.gif\" align=\"left\">\n				Tomorrow, 10/2/2014 <br> <b style=\"color: #CC0039\">High: 70</b> <b style=\"color: #0066F3\">Low: 57</b> <br> Mostly cloudy <br> 10% chance of precipitation. <br>\n			</div>\n		</div>\n		<div id=\"footer\">\n			<div id=\"footerInfo\">\n				<div id=\"footerAddress\">\n					<small>Bayside High School, 3224 Corporal Kennedy Street, Bayside, NY 11361-1061 <br>\n					Phone: (718) 229-7600  |  Fax: (718) 423-9566 <br>\n					<a href=\"#\">Locate School</a></small>\n					<div id=\"footerLinks\"><small><a href=\"#\">Contact US</a> | <a href=\"#\">User Policy</a></small> <img src=\"img/facebook_share_icon.gif\"> <img src=\"img/twitter_share_icon.gif\"></div>\n				</div>\n			</div>\n			<div id=\"footerLogo\"></div>\n		</div>\n	</div>\n</body>\n</html>",
+					"file": "/C/Users/Mu.C/AppData/Local/Temp/HZ$D.952.1142/fakebhs.html",
+					"file_size": -1,
+					"file_write_time": -1,
+					"settings":
+					{
+						"buffer_size": 14941,
+						"line_ending": "Unix"
 					}
 				}
 			],
@@ -366,6 +413,7 @@
 			},
 			"file_history":
 			[
+				"/C/Intel/container.html",
 				"/E/School_Document/CS Career/container.html",
 				"/C/Users/s1/Desktop/new.html",
 				"/E/pyproject/hello/templates/index.html",
@@ -450,6 +498,16 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"width",
+					"links",
+					"}\n",
+					";\n",
+					"title",
+					"tile",
+					"tilebar",
+					"divitor",
+					"blue",
+					"container",
 					"%;*/\n",
 					"gotoAndStop",
 					"spriteSheetAnim"
@@ -475,32 +533,60 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/C/Intel/container.html",
+							"file": "/C/Users/Mu.C/Documents/GitHub/BaysideHSeChalk/container.html",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 4434,
+								"buffer_size": 12422,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										169,
-										169
+										3356,
+										3356
 									]
 								],
 								"settings":
 								{
-									"spell_check": true,
 									"syntax": "Packages/HTML/HTML.tmLanguage",
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 3192.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/C/Users/Mu.C/AppData/Local/Temp/HZ$D.952.1142/fakebhs.html",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 14941,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										939,
+										944
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 358.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
 							"type": "text"
 						}
 					]
@@ -541,7 +627,7 @@
 			{
 				"height": 0.0
 			},
-			"position": "0,0,1,-1,-1,-1,-1,804,427,97,1333",
+			"position": "0,0,1,-32062,-32000,-1,-1,720,275,13,1443",
 			"project": "",
 			"replace":
 			{
